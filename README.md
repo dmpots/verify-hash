@@ -43,6 +43,6 @@ the command line.
 	>>> verify_hash.compare_hash(".gitattributes", algorithm="sha1", expected="C0BBC8F5931193D649C9D0AF3E02921B2C043900")
 	True
 
-** Run Tests **
+**Run Tests**
 
 	> py -m doctest README.md
