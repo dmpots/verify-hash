@@ -28,7 +28,17 @@ the command line.
 
 **Command Line Example**
 
-	> verify-hash.py --algorithm=sha1 .gitignore 9E12A4DA8B38FE993CE11AEA37804E83A29CD357
+Verification failure
+
+	> verify-hash.py --algorithm=sha1 .gitignore C0BBC8F5931193D649C9D0AF3E02921B2C043900
+	FAIL: .gitignore
+	COMPUTED: 9E12A4DA8B38FE993CE11AEA37804E83A29CD357
+	EXPECTED: C0BBC8F5931193D649C9D0AF3E02921B2C043900
+	Hash does not match expected value.
+
+Verification success
+	
+	> verify-hash.py --algorithm=sha1 .gitattributes C0BBC8F5931193D649C9D0AF3E02921B2C043900
 	Hash matches expected value.
 	
 **Python Example**
